@@ -1,0 +1,99 @@
+:root {
+    --darkmode-cont-bg-color: #312050;
+    --darkmode-text-color: #fff;
+    --lightmode-cont-bg-color: #efe6ff;
+    --darkmode-bg-color: #1F1139;
+    --darkmode-text-color: #fff;
+    --lightmode-bg-color: #FAF8FF;
+    --lightmode-text-color: #312050;
+    --font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    --darkShadow: 4px 6px 40px -10px rgba(0, 0, 0, 0.3);
+    --lightmode-sub-text-color:#604B86;
+
+
+    --darkmode-total-bg-color: #312050;
+    --darkmode-total-text-color: #ccc3dc;
+    --darkmode-total-dot-bg-color: #604b86;
+  
+    --darkmode-active-bg-color: #0b274a;
+    --darkmode-active-text-color: #005dd6;
+    --darkmode-active-dot-bg-color: #005dd6;
+  
+    --darkmode-recovered-bg-color: #052a12;
+    --darkmode-recovered-text-color: #27be5f;
+    --darkmode-recovered-dot-bg-color: #27be5f;
+  
+    --darkmode-deaths-bg-color: #270303;
+    --darkmode-deaths-text-color: #ff0808;
+    --darkmode-deaths-dot-bg-color: #ff0808;
+  
+    --lightmode-total-bg-color:#EFE6FF;
+    --lightmode-total-text-color:#604B86;
+    --lightmode-total-dot-bg-color:#604B86;
+  
+    --lightmode-active-bg-color: #D3E6FF;
+    --lightmode-active-text-color: #005DD6;
+    --lightmode-active-dot-bg-color: #005DD6;
+  
+    --lightmode-recovered-bg-color: #E9FFF1;
+    --lightmode-recovered-text-color: #27be5f;
+    --lightmode-recovered-dot-bg-color: #27be5f;
+  
+    --lightmode-deaths-bg-color: #FFEAEA;
+    --lightmode-deaths-text-color: #ff0808;
+    --lightmode-deaths-dot-bg-color: #ff0808;
+  
+  }
+
+  .db-current-update-section{
+      width:100%;
+      height: auto;
+      margin-top:40px; 
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .current-update-country-name>h3{
+    color: var(--lightmode-text-color);
+  }
+
+  .last-update-time>p{
+      margin: 0px;
+      color: var(--lightmode-sub-text-color);
+      font-weight: 600;
+      font-size: 14px;
+  }
+
+  .db-case-update{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px 0px;
+      padding: 10px 10px;
+      border-radius: 2px;
+      border-left:4px solid;
+      box-shadow: 0px 4px 61px 4px rgba(49, 32, 80, 0.1);
+    
+  }
+
+  .new-case{
+    border-color: var(--lightmode-total-dot-bg-color);
+    background: var(--lightmode-total-bg-color);
+    color: var(--lightmode-total-text-color);
+  }
+
+  .death-case{
+    border-color: var(--lightmode-deaths-dot-bg-color);
+    background: var(--lightmode-deaths-bg-color);
+    color: var(--lightmode-deaths-text-color);
+  }
+
+  .test-case{
+    border-color: var(--lightmode-recovered-dot-bg-color);
+    background: var(--lightmode-recovered-bg-color);
+    color: var(--lightmode-recovered-text-color);
+  }

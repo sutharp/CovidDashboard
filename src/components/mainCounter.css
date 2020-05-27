@@ -1,0 +1,379 @@
+:root {
+  --darkmode-cont-bg-color: #312050;
+  --darkmode-text-color: #fff;
+  --font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  --darkShadow: 4px 6px 40px -10px rgba(0, 0, 0, 0.3);
+  --darkmode-total-bg-color: #312050;
+  --darkmode-total-text-color: #ccc3dc;
+  --darkmode-total-dot-bg-color: #604b86;
+
+  --darkmode-active-bg-color: #0b274a;
+  --darkmode-active-text-color: #005dd6;
+  --darkmode-active-dot-bg-color: #005dd6;
+
+  --darkmode-recovered-bg-color: #052a12;
+  --darkmode-recovered-text-color: #27be5f;
+  --darkmode-recovered-dot-bg-color: #27be5f;
+
+  --darkmode-deaths-bg-color: #270303;
+  --darkmode-deaths-text-color: #ff0808;
+  --darkmode-deaths-dot-bg-color: #ff0808;
+
+  --lightmode-total-bg-color: #efe6ff;
+  --lightmode-total-text-color: #604b86;
+  --lightmode-total-dot-bg-color: #604b86;
+
+  --lightmode-active-bg-color: #d3e6ff;
+  --lightmode-active-text-color: #005dd6;
+  --lightmode-active-dot-bg-color: #005dd6;
+
+  --lightmode-recovered-bg-color: #e9fff1;
+  --lightmode-recovered-text-color: #27be5f;
+  --lightmode-recovered-dot-bg-color: #27be5f;
+
+  --lightmode-deaths-bg-color: #ffeaea;
+  --lightmode-deaths-text-color: #ff0808;
+  --lightmode-deaths-dot-bg-color: #ff0808;
+}
+
+.db-total-number {
+  background: var(--lightmode-total-bg-color);
+  color: var(--lightmode-total-text-color);
+  padding: 20px 26px;
+  border-radius: 20px;
+  margin: 4% 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 4px 40px -12px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.db-total-dot-shape > span {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  text-align: center;
+  background: var(--lightmode-total-dot-bg-color);
+  display: block;
+}
+
+.db-active-number {
+  background: var(--lightmode-active-bg-color);
+  color: var(--lightmode-active-text-color);
+  padding: 20px 26px;
+  border-radius: 20px;
+  margin: 4% 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 4px 40px -12px rgba(0, 0, 0, 0.2);
+}
+
+.db-active-dot-shape > span {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  text-align: center;
+  background: var(--lightmode-active-dot-bg-color);
+  display: block;
+}
+
+.db-recovered-number {
+  background: var(--lightmode-recovered-bg-color);
+  color: var(--lightmode-recovered-text-color);
+  padding: 20px 26px;
+  border-radius: 20px;
+  margin: 4% 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 4px 40px -12px rgba(0, 0, 0, 0.2);
+}
+
+.db-recovered-dot-shape > span {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  text-align: center;
+  background: var(--lightmode-recovered-dot-bg-color);
+  display: block;
+}
+
+.db-death-number {
+  background: var(--lightmode-deaths-bg-color);
+  color: var(--lightmode-deaths-text-color);
+  padding: 20px 26px;
+  border-radius: 20px;
+  margin: 4% 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 4px 40px -12px rgba(0, 0, 0, 0.2);
+}
+
+.db-death-dot-shape > span {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  text-align: center;
+  background: var(--lightmode-deaths-dot-bg-color);
+  display: block;
+}
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .db-total-number {
+    padding: 20px 14px;
+  }
+
+  .db-total-number > div > h4 {
+    font-size: 20px;
+  }
+
+  .db-total-number > div > h2 {
+    font-size: 24px;
+  }
+
+  .db-recovered-number {
+    padding: 20px 14px;
+  }
+
+  .db-recovered-number > div > h4 {
+    font-size: 20px;
+  }
+
+  .db-recovered-number > div > h2 {
+    font-size: 24px;
+  }
+
+  .db-active-number {
+    padding: 20px 14px;
+  }
+
+  .db-active-number > div > h4 {
+    font-size: 20px;
+  }
+
+  .db-active-number > div > h2 {
+    font-size: 24px;
+  }
+
+  .db-death-number {
+    padding: 20px 14px;
+  }
+
+  .db-death-number > div > h4 {
+    font-size: 20px;
+  }
+
+  .db-death-number > div > h2 {
+    font-size: 24px;
+  }
+
+  .db-active-dot-shape > span {
+    width: 0.6em;
+    height: 0.6em;
+  }
+
+  .db-total-dot-shape > span {
+    width: 0.6em;
+    height: 0.6em;
+  }
+
+  .db-recovered-dot-shape > span {
+    width: 0.6em;
+    height: 0.6em;
+  }
+
+  .db-death-dot-shape > span {
+    width: 0.6em;
+    height: 0.6em;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .db-total-number {
+    padding: 20px 14px;
+  }
+
+  .db-total-number > div > h4 {
+    font-size: 16px;
+  }
+
+  .db-total-number > div > h2 {
+    font-size: 20px;
+  }
+
+  .db-recovered-number {
+    padding: 20px 14px;
+  }
+
+  .db-recovered-number > div > h4 {
+    font-size: 16px;
+  }
+
+  .db-recovered-number > div > h2 {
+    font-size: 20px;
+  }
+
+  .db-active-number {
+    padding: 20px 14px;
+  }
+
+  .db-active-number > div > h4 {
+    font-size: 16px;
+  }
+
+  .db-active-number > div > h2 {
+    font-size: 20px;
+  }
+
+  .db-death-number {
+    padding: 20px 14px;
+  }
+
+  .db-death-number > div > h4 {
+    font-size: 16px;
+  }
+
+  .db-death-number > div > h2 {
+    font-size: 20px;
+  }
+
+  .db-active-dot-shape > span {
+    width: 0.8em;
+    height: 0.8em;
+  }
+
+  .db-total-dot-shape > span {
+    width: 0.8em;
+    height: 0.8em;
+  }
+
+  .db-recovered-dot-shape > span {
+    width: 0.8em;
+    height: 0.8em;
+  }
+
+  .db-death-dot-shape > span {
+    width: 0.8em;
+    height: 0.8em;
+  }
+}
+
+
+@media (max-width: 768px){
+  .db-total-number {
+    padding: 20px 14px;
+  }
+
+  .db-total-number > div > h4 {
+    font-size: 16px;
+  }
+
+  .db-total-number > div > h2 {
+    font-size: 20px;
+  }
+
+  .db-recovered-number {
+    padding: 20px 14px;
+  }
+
+  .db-recovered-number > div > h4 {
+    font-size: 16px;
+  }
+
+  .db-recovered-number > div > h2 {
+    font-size: 20px;
+  }
+
+  .db-active-number {
+    padding: 20px 14px;
+  }
+
+  .db-active-number > div > h4 {
+    font-size: 16px;
+  }
+
+  .db-active-number > div > h2 {
+    font-size: 20px;
+  }
+
+  .db-death-number {
+    padding: 20px 14px;
+  }
+
+  .db-death-number > div > h4 {
+    font-size: 16px;
+  }
+
+  .db-death-number > div > h2 {
+    font-size: 20px;
+  }
+
+  .db-active-dot-shape > span {
+    width: 0.8em;
+    height: 0.8em;
+  }
+
+  .db-total-dot-shape > span {
+    width: 0.8em;
+    height: 0.8em;
+  }
+
+  .db-recovered-dot-shape > span {
+    width: 0.8em;
+    height: 0.8em;
+  }
+
+  .db-death-dot-shape > span {
+    width: 0.8em;
+    height: 0.8em;
+  }
+}
+
+
+
+
+
+.fadeInUp {
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  0% {
+    bottom: 100px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+.opa {
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: opa;
+  animation-name: opa;
+}
+
+@keyframes opa {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

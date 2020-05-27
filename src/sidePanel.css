@@ -1,0 +1,58 @@
+:root {
+    --darkmode-cont-bg-color: #312050;
+    --darkmode-text-color: #fff;
+    --font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --darkShadow : 2px 6px 40px -10px rgba(0,0,0,0.2);
+
+  }
+
+.db-side-nav-menu{
+    background: var(--darkmode-cont-bg-color);
+    color: var(--darkmode-text-color);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 98%;
+    box-shadow: var(--darkShadow) ;
+}
+
+.db-covid19-logo{
+    font-size:2.5em;
+    color:#FF0808;
+    margin-top: 8px;
+}
+
+.db-covid19-logo>p {
+    font-size: 16px;
+    color: var(--darkmode-text-color);
+    font-family: var(--font);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.db-nav-elements{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.db-nav-elements>span{
+    font-size: 1.8em;
+    padding: 6px 12px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    transition:all ease-in-out 0.2s;
+}
+
+.db-nav-elements>span:hover{
+    background: rgb(72, 56, 102);
+    cursor: pointer;
+    
+}
+
+.db-nav-elements>span.selected{
+    background: #604B86;
+}

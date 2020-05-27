@@ -1,0 +1,114 @@
+:root {
+  --darkmode-bg-color: #1f1139;
+  --darkmode-text-color: #fff;
+  --lightmode-list-text-color:#312050;
+  --darkmode-input-bg-color: #1c1039;
+  --lightmode-input-bg-color: #f8f5ff;
+  --lightmode-text-color: #fff;
+  --lightmode-scollbar-bg-color:#CCC3DC;
+  --lightmode-scrollbar-handle-color:#312050;
+  --font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.db-search-input {
+  background: var(--lightmode-input-bg-color);
+  color: var(--lightmode-input-text-color);
+  padding: 10px 20px;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+  margin: 4% auto;
+}
+
+.db-searchinput-icon {
+  position: relative;
+  right: 10%;
+}
+
+.db-search-form {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.form-control:focus {
+  background: var(--lightmode-input-bg-color);
+  color: var(--lightmode-input-text-color);
+  border-color: var(--darkmode-input-bg-color);
+  outline: 0;
+  box-shadow: none;
+}
+
+.db-state-country-list {
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--lightmode-cont-bg-color);
+  margin-top: 30px;
+  box-shadow: 0px 4px 61px 4px rgba(49, 32, 80, 0.1);
+}
+
+.db-coun-state-list {
+  height: 525px;
+  overflow-y: scroll;
+  margin: 0px 6% 4%;
+  margin-bottom: 0px;
+  
+  padding: 10px;
+}
+
+.db-list-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 4px 14px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.selected-ele{
+  background: #604B86;
+}
+.db-list-ele-number{
+  width:45%;
+  color:var(--lightmode-list-text-color);
+}
+
+.db-list-ele-name{
+  width:50%;
+  color:#AE9ECB;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: var(--lightmode-scollbar-bg-color);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:var(--lightmode-scrollbar-handle-color);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--lightmode-scrollbar-handle-color); 
+}
+
+@media (max-width: 991.98px) and (min-width: 768px){
+  .db-list-ele-number{
+    display: none;
+  }
+}
